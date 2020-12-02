@@ -228,8 +228,8 @@ class Admin extends CI_Controller
         $this->email->from('umusbrebes@gmail.com', 'Universitas Muhadi Setiabudi');
         $this->email->to($email);
 
-        $this->email->subject('Sistem Informasi Skripsi');
-        $this->email->message('Selamat Datang ' . $nama . ' di Universitas Muhadi Setiabudi. Sekarang anda bisa login sistem informasi skripsi dengan menggunakan ID anda. Password : ' . $password . '  Semoga harimu menyenangkan.');
+        $this->email->subject('Bimbingan Tesis Online');
+        $this->email->message('Selamat Datang ' . $nama . ' di Politeknik Negeri Malang. Sekarang anda bisa login bimbingan tesis online dengan menggunakan ID anda. Password : ' . $password . '  Semoga harimu menyenangkan.');
 
         return $this->email->send();
 

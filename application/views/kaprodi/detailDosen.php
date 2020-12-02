@@ -40,7 +40,7 @@ foreach ($dosen->result() as $d) {
 								<th>No</th>
 								<th>Mahasiswa</th>
 								<th>Status Proposal</th>
-								<th>Status Skripsi</th>
+								<th>Status Tesis</th>
 								<th>Status</th>
 							</tr>
 						</thead>

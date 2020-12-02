@@ -44,7 +44,7 @@
 				<th>Nama / NIM</th>
 				<th colspan="2">Pembimbing</th>
 				<th>Proposal</th>
-				<th>Skripsi</th>
+				<th>Tesis</th>
 			</tr>
 		</thead>
 		<tbody>

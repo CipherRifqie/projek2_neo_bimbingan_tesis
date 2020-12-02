@@ -91,7 +91,7 @@
 				<tr>
 					<th> Nama </th>
 					<th class="text-center"> Proposal </th>
-					<th class="text-center">Skripsi</th>
+					<th class="text-center">Tesis</th>
 					<th >Status Pembimbing</th>
 				</tr>
 			</thead>

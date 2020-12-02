@@ -15,17 +15,17 @@ class Cetak extends CI_Controller {
 		$pdf = new FPDF('P','mm','A4');
 		$pdf->AddPage();
 		$pdf->SetFont('Times', 'B', 12);
-		$pdf->Cell(0, 0, 'FORMULIR PENGAJUAN JUDUL SKRIPSI', 0,0,'C');
+		$pdf->Cell(0, 0, 'FORMULIR PENGAJUAN JUDUL TESIS', 0,0,'C');
 		$pdf->Ln(15);
 		$pdf->SetFont('Times', '', 12);
 		$pdf->Cell(0, 0, 'Kepada Yth,', 0,0,'L');
-		$pdf->Cell(0, 0, 'Brebes,.../.../2018', 0,0,'R');
+		$pdf->Cell(0, 0, 'Malang,.../.../2020', 0,0,'R');
 		$pdf->ln(5);
-		$pdf->Cell(0, 0, 'Bapak : Nur Ariesanto, M.Kom', 0,0,'L');
+		$pdf->Cell(0, 0, 'Bapak : Riksa Sayoedha, M.Kom', 0,0,'L');
 		$pdf->ln(5);
 		$pdf->Cell(0, 0, 'Ka. Prodi Teknik Informatika', 0,0,'L');
 		$pdf->ln(5);
-		$pdf->Cell(0, 0, 'Univesitas Muhadi Setiabudi Brebes', 0,0,'L');
+		$pdf->Cell(0, 0, 'Politeknik Negeri Malang', 0,0,'L');
 		$pdf->ln(5);
 		$pdf->Cell(0, 0, 'Di', 0,0,'L');
 		$pdf->ln(5);
@@ -54,9 +54,9 @@ class Cetak extends CI_Controller {
 		$pdf->ln(5);
 		$pdf->MultiCell(0,5,'...........................................................................................................................................................................................................................................................................................................................',0,'J');
 		$pdf->ln(5);
-		$pdf->MultiCell(0,5,'Adapun judul yang saya ajukan adalah judul yang menurut saya bisa diselesaikan tepat waktu dan telah melakukan konsultasi dengan beberapa dosen di Universitas Muhadi Setiabudi Brebes, dan dengan alasan ini saya sekalian mengajukan permohonan untuk dosen Pembimbing Skripsi (Formulir Pengajuan Pembimbing)',0,'J');
+		$pdf->MultiCell(0,5,'Adapun judul yang saya ajukan adalah judul yang menurut saya bisa diselesaikan tepat waktu dan telah melakukan konsultasi dengan beberapa dosen di Politeknik Negeri Malang, dan dengan alasan ini saya sekalian mengajukan permohonan untuk dosen Pembimbing Tesis (Formulir Pengajuan Pembimbing)',0,'J');
 		$pdf->ln(5);
-		$pdf->MultiCell(0,5,'Demikian isi dari Surat Permohonan ini saya buat, besar harapan saya bapak dapat mengabulkannya dan mengeluarkan SK Pembimbing untuk pelaksanaan Skripsi tersebut. Atas kesedian dan pertimbangan bapak saya ucapkan terimakasih.',0,'J');
+		$pdf->MultiCell(0,5,'Demikian isi dari Surat Permohonan ini saya buat, besar harapan saya bapak dapat mengabulkannya dan mengeluarkan SK Pembimbing untuk pelaksanaan Tesis tersebut. Atas kesedian dan pertimbangan bapak saya ucapkan terimakasih.',0,'J');
 		$pdf->ln(10);
 		$pdf->Cell(150, 0, '', 0,0,'L');
 		$pdf->Cell(0, 0, 'Hormat Saya,', 0,0,'L');
@@ -65,7 +65,7 @@ class Cetak extends CI_Controller {
 		$pdf->Cell(0, 0, 'Mahasiswa', 0,0,'L');
 		$pdf->ln(20);
 		$pdf->Cell(150, 0, '', 0,0,'L');
-		$pdf->Cell(0, 0, 'Devi Adi Nufriana', 0,0,'L');
+		$pdf->Cell(0, 0, 'Rifqie Muhammad', 0,0,'L');
 		$pdf->ln(5);
 		$pdf->Cell(0, 0, 'Dosen Konsultasi Judul:', 0,0,'L');
 		$pdf->ln(5);
@@ -144,7 +144,7 @@ class Cetak extends CI_Controller {
 					$pdf->Row(array($no++,longdate_indo($d->TanggalBimbingan),$d->Catatan,$d->Nama));
 			}		
 		} else {
-			$pdf->MultiCell(100,7, 'Tidak Ditemukan Catatan Bimbingan Dosen Untuk Skripsi Ini', 0);
+			$pdf->MultiCell(100,7, 'Tidak Ditemukan Catatan Bimbingan Dosen Untuk Tesis Ini', 0);
 		}
 
 

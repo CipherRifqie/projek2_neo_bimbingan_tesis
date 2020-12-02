@@ -74,7 +74,7 @@
 <div class="row align-items-center">
 	<div class="col-md mb-5">
 		<h2> Mahasiswa Belum Ada </h2>
-		Mahasiswa Saat Ini Belum Ada !! Anda Belum Bisa Mengirim Notifikasi Agenda Kegiatan Skripsi
+		Mahasiswa Saat Ini Belum Ada !! Anda Belum Bisa Mengirim Notifikasi Agenda Kegiatan Tesis
 	</div>
 	<div class="col-md-3">
 		<img src="<?=base_url('assets/web/sad.jpg')?>">
